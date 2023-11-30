@@ -18,8 +18,6 @@ export default function RootLayout({
     <html lang="fr">
       <body className={inter.className}>
 
-       <img src="./assets/images/background-dashboard.png" alt="dfsdf" />
-
         {children}
         </body>
     </html>
