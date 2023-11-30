@@ -16,7 +16,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="fr">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+
+       <img src="./assets/images/background-dashboard.png" alt="dfsdf" />
+
+        {children}
+        </body>
     </html>
   )
 }
