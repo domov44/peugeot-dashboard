@@ -1,10 +1,9 @@
-import BackgroundImage from './components/BackgroundImage';
-
+import Dashboard from './components/Dashboard';
 
 export default function Home() {
   return (
     <main className="">
-      <BackgroundImage />
+      <Dashboard />
     </main>
   )
 }
