@@ -1,4 +1,4 @@
-import dashboard from '../assets/images/background-dashboard2.png';
+import dashboard from '../assets/images/background-dashboard.png';
 
 function BackgroundImage() {
 
