@@ -1,5 +1,11 @@
 
 import logo from '../assets/images/logo-peugeot.svg';
+import car from '../assets/images/car.svg';
+import map from '../assets/images/map.svg';
+import musique from '../assets/images/music.svg';
+import chat from '../assets/images/chat.svg';
+import sun from '../assets/images/sun.svg';
+import setting from '../assets/images/setting.svg';
 
 function Aside() {
 
@@ -7,12 +13,16 @@ function Aside() {
         <aside className="aside-section">
             <div className="content">
                 <img className="logo" src={logo.src} ></img>
-                <div className="element__group">
-                    <ul className="navigation">
-                        <li className="item">Test</li>
-                        <li className="item">Test</li>
-                    </ul>
-                </div>
+                <ul className="primary__navigation">
+                    <li className="item"><img src={car.src}></img></li>
+                    <li className="item"><img src={map.src}></img></li>
+                    <li className="item"><img src={musique.src}></img></li>
+                    <li className="item"><img src={chat.src}></img></li>
+                    <li className="item"><img src={sun.src}></img></li>
+                </ul>
+                <ul className="secondary__navigation">
+                    <li className="item"><img src={setting.src}></img></li>
+                </ul>
             </div>
         </aside>
     )

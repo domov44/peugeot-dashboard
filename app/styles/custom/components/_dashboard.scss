@@ -27,13 +27,13 @@
     grid-template-columns: repeat(12, 1fr);
 
     aside {
-        grid-column: span 2;
+        grid-column: span 1;
     }
 
     .main {
         display: flex;
         justify-content: center;
-        grid-column: span 10;
+        grid-column: span 11;
 
         img {
             width: 700px;
