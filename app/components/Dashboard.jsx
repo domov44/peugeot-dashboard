@@ -1,5 +1,6 @@
 import BackgroundImage from './BackgroundImage';
 import Screen from './Screen';
+import Aside from './Aside';
 
 
 function Dashboard() {
@@ -7,7 +8,9 @@ function Dashboard() {
     return (
         <div className="dashboard__layout">
             <BackgroundImage />
-            <Screen />
+            <Screen>
+                <Aside />
+            </Screen>
         </div>
     )
 }

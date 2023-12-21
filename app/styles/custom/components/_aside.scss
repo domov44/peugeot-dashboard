@@ -1,0 +1,33 @@
+.aside-section {
+    width: 100px;
+    transform: translateX(0%);
+    overflow-y: auto;
+    transition: 0.3s;
+    background-color: black;
+    padding: 15px;
+    z-index: 2;
+    height: 100%;
+    border-radius: 0px 10px 10px 0px;
+
+    .logo {
+        gap: 10px;
+        margin-bottom: 20px;
+    }
+
+    .elements__group {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+
+        .menu-item {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px;
+            border-radius: 5px;
+            transition: 0.2s;
+            cursor: pointer;
+        }
+    }
+}
