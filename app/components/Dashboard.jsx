@@ -22,11 +22,11 @@ function Dashboard() {
 
                         <div>
                             <h1>Garage de l’Abbaye</h1>
-                            <p>31 rue des Olivettes
+                            <p>31 rue des Olivettes<br></br>
                                 44000, Nantes</p>
                             <button>Appeler</button>
                         </div>
-                        <div>
+                        <div className='map'>
                             <img className="dashboard__map" src={map.src} alt="map" />
                         </div>
 
