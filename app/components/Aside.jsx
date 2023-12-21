@@ -14,14 +14,14 @@ function Aside() {
             <div className="content">
                 <img className="logo" src={logo.src} ></img>
                 <ul className="primary__navigation">
-                    <li className="item"><img src={car.src}></img></li>
-                    <li className="item"><img src={map.src}></img></li>
-                    <li className="item"><img src={musique.src}></img></li>
-                    <li className="item"><img src={chat.src}></img></li>
-                    <li className="item"><img src={sun.src}></img></li>
+                    <li className="item"><img className="icone" src={car.src}></img></li>
+                    <li className="item"><img className="icone" src={map.src}></img></li>
+                    <li className="item"><img className="icone" src={musique.src}></img></li>
+                    <li className="item"><img className="icone" src={chat.src}></img></li>
+                    <li className="item"><img className="icone" src={sun.src}></img></li>
                 </ul>
                 <ul className="secondary__navigation">
-                    <li className="item"><img src={setting.src}></img></li>
+                    <li className="item"><img className="icone" src={setting.src}></img></li>
                 </ul>
             </div>
         </aside>
