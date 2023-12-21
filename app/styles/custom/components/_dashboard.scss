@@ -5,6 +5,7 @@
     position: relative;
     display: grid;
     place-items: center;
+    color: white;
 }
 
 .dashboard__img {
@@ -19,25 +20,94 @@
     position: absolute;
     width: 134vh;
     height: 83vh;
-    background: #fff;
+    background: #34383B;
     border-radius: 5px;
     overflow: hidden;
     mix-blend-mode: screen;
     display: grid;
-    grid-template-columns: repeat(12, 1fr);
+    grid-template-columns: repeat(14, 1fr);
 
     aside {
-        grid-column: span 2;
+        grid-column: span 1;
     }
 
     .main {
         display: flex;
         justify-content: center;
-        grid-column: span 10;
+        grid-column: span 13;
 
-        img {
-            width: 700px;
+        .dashboard__car {
+            animation: 1s linear app;
+            animation-delay: 10s;
+            transition: 1s;
+            width: 90vh;
             object-fit: contain;
         }
+    }
+
+    .bottom_nav {
+        background: #506463;
+        position: absolute;
+        bottom: 0;
+        display: flex;
+        width: 700px;
+        padding: 40px 60px 40px 60px;
+        border-radius: 30px 30px 0 0;
+        gap: 20px;
+        justify-content: center;
+        z-index: 1;
+        transform: translateY(180px);
+        transition: all 1s;
+
+        div {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        p {
+            font-size: 12px;
+        }
+
+        h1 {
+            font-weight: 600;
+        }
+
+        button {
+            display: flex;
+            width: 100%;
+            padding: 5px 31px;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            border-radius: 18px;
+            background: #292d32;
+            color: white;
+        }
+
+        transition: all 1s;
+
+        svg {
+            position: absolute;
+            width: 500px;
+            bottom: -50px;
+            z-index: -1;
+        }
+
+        &:hover {
+            transform: translateY(0);
+        }
+    }
+}
+
+
+@keyframes app {
+    from {
+        transform: scale(0);
+    }
+
+    to {
+        transform: scale(1);
     }
 }
