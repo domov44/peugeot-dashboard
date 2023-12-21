@@ -1,5 +1,9 @@
 .aside-section {
-    width: 100px;
+    transform: translateX(0%);
+    overflow-y: auto;
+    transition: 0.3s;
+    background-color: black;
+    padding: 15px;
     z-index: 2;
     padding: 10px;
     height: 100%;
