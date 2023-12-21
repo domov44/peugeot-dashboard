@@ -18,14 +18,14 @@
 
 .dashboard__screen {
     position: absolute;
-    width: 134vh;
+    width: 132vh;
     height: 83vh;
     background: #34383B;
     border-radius: 5px;
     overflow: hidden;
     mix-blend-mode: screen;
     display: grid;
-    grid-template-columns: repeat(14, 1fr);
+    grid-template-columns: repeat(15, 1fr);
 
     aside {
         grid-column: span 1;
@@ -34,7 +34,7 @@
     .main {
         display: flex;
         justify-content: center;
-        grid-column: span 13;
+        grid-column: span 14;
 
         .dashboard__car {
             animation: 1s linear app;
