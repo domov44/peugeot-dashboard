@@ -1,4 +1,3 @@
-
 .dashboard__layout {
     overflow: hidden;
     min-height: 100vh;
@@ -23,5 +22,22 @@
     background: #fff;
     border-radius: 5px;
     overflow: hidden;
-    mix-blend-mode: exclusion;
+    mix-blend-mode: screen;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+
+    aside {
+        grid-column: span 2;
+    }
+
+    .main {
+        display: flex;
+        justify-content: center;
+        grid-column: span 10;
+
+        img {
+            width: 700px;
+            object-fit: contain;
+        }
+    }
 }
