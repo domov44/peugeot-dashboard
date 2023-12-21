@@ -122,26 +122,33 @@ button {
 
 .aside-section {
   width: 100px;
-  transform: translateX(0%);
-  overflow-y: auto;
-  transition: 0.3s;
-  background-color: black;
-  padding: 15px;
+  z-index: 2;
+  padding: 10px;
+  height: 100%;
+}
+.aside-section .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   z-index: 2;
   height: 100%;
-  border-radius: 0px 10px 10px 0px;
+  background-color: black;
+  border-radius: 10px;
 }
-.aside-section .logo {
-  gap: 10px;
+.aside-section .content .logo {
   width: 30px;
   margin-bottom: 20px;
+  margin-top: 20px;
 }
-.aside-section .elements__group {
+.aside-section .content .elements__group {
   display: flex;
   flex-direction: column;
   gap: 15px;
 }
-.aside-section .elements__group .menu-item {
+.aside-section .content .elements__group .navigation {
+  list-style: none;
+}
+.aside-section .content .elements__group .navigation .menu-item {
   position: relative;
   display: flex;
   align-items: center;

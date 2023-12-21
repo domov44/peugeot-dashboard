@@ -1,34 +1,43 @@
 .aside-section {
     width: 100px;
-    transform: translateX(0%);
-    overflow-y: auto;
-    transition: 0.3s;
-    background-color: black;
-    padding: 15px;
     z-index: 2;
+    padding: 10px;
     height: 100%;
-    border-radius: 0px 10px 10px 0px;
 
-    .logo {
-        gap: 10px;
-        width: 30px;
-        margin-bottom: 20px;
-    }
-
-    .elements__group {
+    .content {
         display: flex;
         flex-direction: column;
-        gap: 15px;
+        align-items: center;
+        z-index: 2;
+        height: 100%;
+        background-color: black;
+        border-radius: 10px;
 
-        .menu-item {
-            position: relative;
+        .logo {
+            width: 30px;
+            margin-bottom: 20px;
+            margin-top: 20px;
+        }
+
+        .elements__group {
             display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 10px;
-            border-radius: 5px;
-            transition: 0.2s;
-            cursor: pointer;
+            flex-direction: column;
+            gap: 15px;
+
+            .navigation {
+                list-style: none;
+
+                .menu-item {
+                    position: relative;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding: 10px;
+                    border-radius: 5px;
+                    transition: 0.2s;
+                    cursor: pointer;
+                }
+            }
         }
     }
 }
